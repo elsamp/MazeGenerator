@@ -1,8 +1,34 @@
 ﻿<Window x:Class="MazeGeneratorUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="800" Background="Gray">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu IsMainMenu="True" Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New Maze" x:Name="newMazeMenuItem" />
+                <Separator />
+                <MenuItem Header="E_xit" x:Name="exitMenuItem" />
+            </MenuItem>
+            <MenuItem Header="_Options">
+                <MenuItem Header="_Dificulty" x:Name="dificultyMenuItem">
+                    <MenuItem Header="_Easy" x:Name="easyMenuItem"/>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Rectangle Fill="LightGray" Grid.Row="2" Grid.Column="1" Margin="5" RenderTransformOrigin="0.5,0.5"/>
+
     </Grid>
 </Window>

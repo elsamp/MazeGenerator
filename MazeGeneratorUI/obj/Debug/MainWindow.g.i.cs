@@ -39,6 +39,38 @@ namespace MazeGeneratorUI {
     /// </summary>
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 20 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem newMazeMenuItem;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 22 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem exitMenuItem;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 25 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem dificultyMenuItem;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 26 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem easyMenuItem;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -67,6 +99,21 @@ namespace MazeGeneratorUI {
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
         void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            switch (connectionId)
+            {
+            case 1:
+            this.newMazeMenuItem = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 2:
+            this.exitMenuItem = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 3:
+            this.dificultyMenuItem = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            case 4:
+            this.easyMenuItem = ((System.Windows.Controls.MenuItem)(target));
+            return;
+            }
             this._contentLoaded = true;
         }
     }
